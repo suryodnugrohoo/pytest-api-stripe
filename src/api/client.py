@@ -1,10 +1,3 @@
-"""Thin Stripe REST client built on requests.Session.
-
-The client centralises the base URL, authentication and timeout, and logs the
-response time of every call. Resource helpers (customers, payment intents)
-return the raw `requests.Response` so tests can assert on status, body and
-timing. Stripe expects form-encoded request bodies and returns JSON.
-"""
 from __future__ import annotations
 
 import logging
