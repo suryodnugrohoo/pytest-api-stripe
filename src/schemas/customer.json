@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stripe Customer",
+  "type": "object",
+  "required": ["id", "object", "created", "livemode"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^cus_" },
+    "object": { "type": "string", "const": "customer" },
+    "email": { "type": ["string", "null"] },
+    "name": { "type": ["string", "null"] },
+    "created": { "type": "integer" },
+    "livemode": { "type": "boolean" },
+    "balance": { "type": "integer" }
+  }
+}

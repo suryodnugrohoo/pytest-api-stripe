@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stripe List",
+  "type": "object",
+  "required": ["object", "data", "has_more", "url"],
+  "properties": {
+    "object": { "type": "string", "const": "list" },
+    "data": { "type": "array" },
+    "has_more": { "type": "boolean" },
+    "url": { "type": "string" }
+  }
+}

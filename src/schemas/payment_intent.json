@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stripe PaymentIntent",
+  "type": "object",
+  "required": ["id", "object", "amount", "currency", "status"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^pi_" },
+    "object": { "type": "string", "const": "payment_intent" },
+    "amount": { "type": "integer" },
+    "currency": { "type": "string" },
+    "status": { "type": "string" },
+    "client_secret": { "type": ["string", "null"] },
+    "livemode": { "type": "boolean" }
+  }
+}
