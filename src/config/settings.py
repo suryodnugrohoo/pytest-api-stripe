@@ -1,8 +1,3 @@
-"""Environment-driven configuration (12-factor style).
-
-Values are read from a local `.env` file (see `.env.example`) via python-dotenv.
-Secrets are never hard-coded and `.env` is git-ignored.
-"""
 from __future__ import annotations
 
 import os
